@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <main class="main">
+        <img src="./assets/img/logo.png" class="logo" onclick="home()" alt="Logo Alura">
+        <section class="div-principal">
+            <form action="">
+                <textarea class="text-input" type="text" name="input-texto" maxlength="120" id="input-texto" placeholder="digite seu texto"></textarea>
+                <div class="form-group">
+                    <img src="./assets/img/aviso.png" class="img-alerta">
+                    <label for="input-texto">Apenas letras minúsculas e sem acento.</label>
+                </div>
+                <div class="botones-div">
+                    <input class="btn-criptografar" type="submit" value="Criptografar" id="btn-criptografar">
+                    <input class="btn-descriptografar" type="submit" value="Descriptografar" id="btn-descriptografar">
+                </div>
+            </form>
+        </section>
+
+        <section class="message-box">
+            <div id="div-desaparece" class="message-box-div">
+                <img src="./assets/img/boneco.svg">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+            </div>
+            <div id="div-aparece">
+                <textarea class="div-mensaje" type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
+                <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="redes">
+            <div class="rede">
+            <a href="https://www.linkedin.com/in/mariasalandra/" target="_blank">
+                <img src="./assets/img/linkedIn_logo.png" alt="Logo LinkedIn" width="45" height="45">
+            </a>
+            </div>
+
+            <div class="rede">
+
+            <a href="https://github.com/MariaSalandra" target="_blank">
+                <img src="./assets/img/logo_github.png" alt="Logo GitHub" width="45" height="45"> 
+            </a>
+            </div>
+        </div>
+
+        <div class="credito">
+            <p>&#169; Desenvolvido por Maria Salandra 2022</p>
+            <p>Programa ONE - Oracle Next Education  & Alura | T3</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
